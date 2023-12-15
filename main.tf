@@ -52,7 +52,7 @@ resource "aws_network_interface" "Eth1" {
 	]
 	private_ips = [ local.Eth1PrivateIpAddress ]
 	tags = {
-		Name = local.Ctrl0Name
+		Name = local.Eth1Name
 		Owner = local.UserEmailTag
 		Project = local.UserProjectTag
 	}
