@@ -21,7 +21,7 @@ variable "Eth0SubnetId" {
 }
 
 variable "Eth1PrivateIpAddress" {
-	default = "10.0.1.10"
+	default = "10.0.10.10"
 	description = "Private IP address associated with the second network interface"
 	type = string
 }
@@ -136,7 +136,7 @@ variable "init_cli" {
 #!/bin/bash -xe
 yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 systemctl status amazon-ssm-agent
-BLADE_IPS=(10.0.1.11)
+BLADE_IPS=(10.0.10.11)
     EOF
 	type = string
 }
