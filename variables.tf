@@ -136,7 +136,7 @@ variable "init_cli" {
 #!/bin/bash -xe
 yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 systemctl status amazon-ssm-agent
-BLADE_IPS=(10.0.10.11)
+BLADE_IPS=(10.0.1.11)
     EOF
 	type = string
 }
