@@ -22,13 +22,6 @@ output "Eth0ElasticIp" {
 	}
 }
 
-output "Eth1" {
-	description = "Ethernet resource associated with the second network interface."
-	value = {
-		"id" : aws_network_interface.Eth1.id
-	}
-}
-
 output "Instance" {
 	description = "Instance resource associated with the EC2 instance."
 	value = {
