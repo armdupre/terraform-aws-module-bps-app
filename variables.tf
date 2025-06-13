@@ -33,19 +33,11 @@ variable "InstanceName" {
 }
 
 variable "InstanceType" {
-	default = "t3.xlarge"
+	default = "c5.xlarge"
 	description = "Instance type of VM"
 	type = string
 	validation {
-		condition = contains([	"t3.xlarge", "t3.2xlarge",
-								"t3a.xlarge", "t3a.2xlarge",
-								"m6i.xlarge", "m6i.2xlarge",
-								"m6a.xlarge", "m6a.2xlarge",
-								"m6in.xlarge", "m6in.2xlarge",
-								"m5.xlarge", "m5.2xlarge",
-								"m5a.xlarge", "m5a.2xlarge",
-								"m5n.xlarge", "m5n.2xlarge",
-								"c6i.xlarge", "c6i.2xlarge",
+		condition = contains([	"c6i.xlarge", "c6i.2xlarge",
 								"c6a.xlarge", "c6a.2xlarge",
 								"c6in.xlarge", "c6in.2xlarge",
 								"c5.xlarge", "c5.2xlarge",
