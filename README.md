@@ -9,7 +9,7 @@ This module creates a single instance having two network interfaces.
 ## Usage
 ```tf
 module "App" {
-	source  = "armdupre/module-bps-app/aws"
+	source  = "git::https://github.com/armdupre/terraform-aws-module-bps-app.git"
 	Eth0SecurityGroupId = aws_security_group.PublicSecurityGroup.id
 	Eth0SubnetId = aws_subnet.PublicSubnet.id
 	Eth1SecurityGroupId = aws_security_group.PrivateSecurityGroup.id
