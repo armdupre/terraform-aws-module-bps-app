@@ -40,7 +40,7 @@ variable "InstanceType" {
 		condition = contains([ "m5.xlarge", "m5.2xlarge",
 							   "m6i.xlarge", "m6i.2xlarge",
 							   "c5.xlarge", "c5.2xlarge",
-							   "c6i.xlarge, "c6i.2xlarge" ], var.InstanceType)
+							   "c6i.xlarge", "c6i.2xlarge" ], var.InstanceType)
 		error_message = <<EOF
 InstanceType must be one of the following types:
 	m5.xlarge, m5.2xlarge,
