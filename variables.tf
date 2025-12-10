@@ -37,7 +37,7 @@ variable "InstanceType" {
 	description = "Instance type of VM"
 	type = string
 	validation {
-		condition = contains([ "m5.xlarge, "m5.2xlarge",
+		condition = contains([ "m5.xlarge", "m5.2xlarge",
 							   "m6i.xlarge", "m6i.2xlarge",
 							   "c5.xlarge", "c5.2xlarge",
 							   "c6i.xlarge, "c6i.2xlarge" ], var.InstanceType)
